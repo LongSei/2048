@@ -31,7 +31,7 @@ def getMoveMinimax(self, alpha, beta, computer_or_person, depth):
             for col in range(0, self.size): 
                 if (self.board[row][col] == 0): 
                     cloneBoard = self.board.copy()
-                    self.board[row][col] = 2
+                    self.board[row][col] = 1
                     result = getMoveMinimax(self, alpha, beta, 1, depth - 1)
                     beta = min(beta, result["score"])
                     if (beta <= alpha): 
@@ -39,7 +39,7 @@ def getMoveMinimax(self, alpha, beta, computer_or_person, depth):
                     self.board = cloneBoard
                     
                     cloneBoard = self.board.copy()
-                    self.board[row][col] = 4
+                    self.board[row][col] = 2
                     result = getMoveMinimax(self, alpha, beta, 1, depth - 1)
                     beta = min(beta, result["score"])
                     if (beta <= alpha): 
