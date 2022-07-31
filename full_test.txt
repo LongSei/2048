@@ -1,4 +1,4 @@
-### Expectimax Algorithm 
+### Expectimax Algorithm with depth = 3
     done in 86.093 seconds
     767 moves
     Highest tile: 1024 
