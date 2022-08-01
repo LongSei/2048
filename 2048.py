@@ -168,7 +168,7 @@ def move_left(row):
     if previous != None:
         new_row[j] = previous
     return new_row
-
+ 
 def move(board, dir):
     # 0: left, 1: up, 2: right, 3: down
     new_board = np.rot90(board, dir)
